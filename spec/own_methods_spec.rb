@@ -26,3 +26,15 @@ describe '#own_reverse' do
     expect(own_reverse(array)).to eq([3,2,1,7,8,9])
   end
 end
+
+describe '#own_sort' do
+  it 'sorts array without repetition' do
+    array = [4,1,5,2,3]
+    expect(own_reverse(array)).to eq([1,2,3,4,5])
+  end
+
+  it 'sorts array witho repetition' do
+    array = [4,1,5,2,3,4]
+    expect(own_reverse(array)).to eq([1,2,3,4,4,5])
+  end
+end
