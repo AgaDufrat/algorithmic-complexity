@@ -18,3 +18,12 @@ def own_reverse(array)
   }
   new_array
 end
+
+def own_sort(array)
+  new_array = [];
+  array.size.times {
+    new_array << array.min
+    array.delete_at(array.index(array.min))
+  }
+  new_array
+end

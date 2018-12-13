@@ -1,4 +1,4 @@
-require 'own_find_duplicates'
+require 'own_methods'
 
 describe '#own_find_duplicates' do
   it 'finds 1 duplicate' do
@@ -30,11 +30,11 @@ end
 describe '#own_sort' do
   it 'sorts array without repetition' do
     array = [4,1,5,2,3]
-    expect(own_reverse(array)).to eq([1,2,3,4,5])
+    expect(own_sort(array)).to eq([1,2,3,4,5])
   end
 
-  it 'sorts array witho repetition' do
+  it 'sorts array with repetition' do
     array = [4,1,5,2,3,4]
-    expect(own_reverse(array)).to eq([1,2,3,4,4,5])
+    expect(own_sort(array)).to eq([1,2,3,4,4,5])
   end
 end
