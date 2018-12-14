@@ -1,7 +1,7 @@
 # Algorithmic Complexity
 
 Framework to time different algorithms and compare their efficiency.
-Own algorithms aiming to be as efficient as possible
+Own algorithms aiming to be as efficient as possible.
 
 ### How to use
 ```
@@ -19,3 +19,6 @@ $ irb
 0.00040000000000000013
  => [5000, 10000, 15000, 20000, 25000, 30000]
 ```
+
+### Own methods execution times
+[Charts in Google Sheets](https://docs.google.com/spreadsheets/d/1hNpJrHs7_VDMuFBRHD_AM0Xy28oIo-XmrnCi4OPyFZs/edit?usp=sharing)

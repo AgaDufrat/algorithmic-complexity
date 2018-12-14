@@ -7,7 +7,7 @@ end
 def time_code(method, *array)
   times = 0
   30.times do
-    # array.shuffle
+    array.shuffle
     start_time = Time.now
     self.send(method, array)
     end_time = Time.now
@@ -17,6 +17,7 @@ def time_code(method, *array)
 end
 
 def run_timing_framework(method)
+  # scale = [5000, 15000, 25000, 350000, 45000, 55000]
   scale = [5000, 10000, 15000, 20000, 25000, 30000]
   scale.each { |i|
     array = rand_array(i)
